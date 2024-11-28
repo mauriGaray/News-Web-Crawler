@@ -1,7 +1,7 @@
 const bbcProvider = require("./bbcProvider");
 
 const providers = {
-  "www.bbc.com": bbcProvider,
+  "bbc.com": bbcProvider,
   // "The Guardian": guardianProvider,
   // "CNN": cnnProvider,
   // "Fox News": foxProvider,

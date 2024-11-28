@@ -3,7 +3,8 @@ const { saveToCache } = require("../cache/cacheMiddleware");
 const textRank = require("../utils/textSummarizerAlgorithm");
 
 async function getNewsSummary(req, res) {
-  const { url } = req.body;
+  const param = Object.keys(req.query)[0];
+  const url = req.query[param];
   try {
     const article = await fetchNewsFromProvider(url);
 

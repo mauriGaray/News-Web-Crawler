@@ -2,7 +2,10 @@ const NodeCache = require("node-cache");
 const cache = new NodeCache({ stdTTL: 3600, checkperiod: 120 });
 
 const cacheMiddleware = (req, res, next) => {
-  const url = req.body.url;
+  const param = Object.keys(req.query)[0];
+
+  const url = req.query[param];
+
   if (!url) {
     return res
       .status(400)

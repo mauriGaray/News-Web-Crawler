@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send("Hello World! Esta todo de 10!");
 });
 
-app.post("/summarizeNews", cacheMiddleware, getNewsSummary);
+app.post("/", cacheMiddleware, getNewsSummary);
 
 app.listen(PORT, () => {
   console.log(`Server corriendo en http://localhost:${PORT}`);

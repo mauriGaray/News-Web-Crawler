@@ -5,6 +5,7 @@ async function bbcProvider(url) {
   const urlObj = new URL(url);
   const pathSegments = urlObj.pathname.split("/");
   const category = pathSegments[1];
+
   if (category !== "news") {
     throw new Error(
       "Solo se permiten articulos de la categoria 'news' en este momento"
