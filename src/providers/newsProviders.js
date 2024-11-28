@@ -1,4 +1,3 @@
-const e = require("express");
 const bbcProvider = require("./bbcProvider");
 
 const providers = {
