@@ -28,7 +28,7 @@ async function bbcProvider(url) {
       console.error(
         `Error al intentar traer el articulo de la BBC: ${error.message}`
       );
-      throw new Error("Error al intentar traer el articulo de la BBC");
+      throw new Error("Error al traer el articulo de la BBC");
     }
   }
 }
